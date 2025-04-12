@@ -1,66 +1,121 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 💻 DEVELOPERS ⚠️
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+1. MBONIMPA ISHIMWE Theogene 22RP01832
+2. MASEGESHO PACIFIQUE 22RP03084
 
-## About Laravel
+# 💍 Marriage Application Portal
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A Laravel-based web portal for managing digital marriage applications, tailored for both **Applicants** and **Administrators**.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 Getting Started ⚠️
 
-## Learning Laravel
+Follow these steps to set up the project locally:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. **Create a folder** to store the project.
+2. **Navigate into the folder**, then run:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+    ```bash
+    git clone --branch group-3-22RP03084-22RP01832-MariageRegistration --single-branch https://github.com/pabon25/group-3-22RP03084-22RP01832-MariageRegistration.git .
+    ```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. **Install dependencies**: ⚠️
 
-## Laravel Sponsors
+    ```bash
+    composer update
+    ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4. **Run migrations**:
 
-### Premium Partners
+    ```bash
+    php artisan migrate
+    ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+5. **Start the development server**:
 
-## Contributing
+    ```bash
+    php artisan serve
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 📋 User Guide
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 👤 For Applicants
 
-## Security Vulnerabilities
+#### 📝 Registration
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. Click **Register** on the homepage.
+2. Fill in your personal details:
+    - Full Name
+    - Email Address
+    - Phone Number
+    - Date of Birth
+    - Address
+3. Create a password.
+4. Click **Register** to complete.
 
-## License
+#### 💒 Marriage Application
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Login to your account.
+2. Click **New Application** on your dashboard.
+3. Fill in the application form:
+    - **Spouse Details**: Name, Gender, Date of Birth, Email, Phone, Address.
+    - **Witness Details**: Name, Contact Information.
+    - **Marriage Details**: Date, Location.
+4. Upload required documents:
+    - Groom's ID Card
+    - Groom's Passport Photo
+    - Bride's ID Card
+    - Bride's Passport Photo
+5. Click **Submit**.
+
+#### 📦 Tracking Application
+
+1. View your dashboard.
+2. Check application status:
+    - 🟡 **Pending**
+    - 🟢 **Approved**
+    - 🔴 **Rejected**
+3. View application details.
+4. When approved, the **Download Certificate** button will be shown.
+
+---
+
+### 🛠️ For Administrators
+
+#### 🔐 Login
+
+1. Access the admin login page.
+2. Use the following credentials:
+
+    - **Email**: `admin@admin.com`
+    - **Password**: `password`
+
+3. Click **Login**.
+
+#### 🗂 Application Management
+
+1. Access the admin dashboard.
+2. View all submitted applications.
+3. Click on any application to see full details.
+4. Review information and uploaded documents.
+5. Approve or reject applications.
+6. Add remarks if necessary.
+
+---
+
+## 🧰 System Requirements
+
+-   PHP >= 8.0
+-   Composer
+-   Laravel
+-   MySQL or MariaDB
+-   Web server (Apache/Nginx)
+
+---
+
+## 📞 Support
+
+For support or technical inquiries, please contact the system administrator.
